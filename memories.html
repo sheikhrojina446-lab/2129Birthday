@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head><title>Why You Are Special ❤️</title><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{min-height:100vh;overflow-x:hidden;background:#160b2b;font-family:Georgia, serif;color:white}
+.sky{position:fixed;inset:0;z-index:-3;background:radial-gradient(ellipse at 50% 20%, #2e1a4d 0%, #1a102e 50%, #110725 100%);}
+.star{position:fixed;background:white;border-radius:50%;}
+.p-heart{position:fixed;text-shadow:0 0 12px #ff3d9a;}
+@keyframes twinkle{0%,100%{opacity:0.2} 50%{opacity:1}}
+@keyframes floatLive{0%{transform:translateY(0)} 50%{transform:translateY(-15px)} 100%{transform:translateY(0)}}
+@keyframes glowLetter{0%,100%{text-shadow:0 0 15px #ff5c9a,0 0 30px #ff5c9a} 50%{text-shadow:0 0 25px #ff8ac2,0 0 50px #ff5c9a}}
+.moon{position:fixed;top:55px;right:35px;width:95px;height:95px;background:radial-gradient(circle at 40% 40%, #ffffea 0%, #fff9d6 60%, #fff2b8 100%);border-radius:50%;box-shadow:0 0 12px rgba(255,255,220,0.8),0 0 25px rgba(255,249,200,0.6),0 0 50px rgba(214,190,255,0.5),0 0 80px rgba(180,140,255,0.3);z-index:2}
+.page{position:relative;z-index:10;min-height:100vh;padding:50px 20px;text-align:center}
+.top{letter-spacing:5px;font-size:10px;opacity:0.7;color:#d8cbe8}
+h1{font-size:42px;font-style:italic;color:#ffd6ec;text-shadow:0 0 15px rgba(255,110,181,0.5);margin-top:12px}
+.memories{width:100%;max-width:1100px;margin:30px auto;display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.memory-card{width:195px;padding:12px;border:1px solid rgba(255,100,180,.45);border-radius:18px;background:rgba(55,15,65,.32);backdrop-filter:blur(3px);transition:0.3s}
+.memory-card:hover{transform:translateY(-8px);box-shadow:0 0 25px rgba(255,92,154,0.5)}
+.letter-box{width:100%;height:160px;border-radius:12px;background:rgba(255,100,180,0.08);border:1px dashed #ff7fb0;display:flex;justify-content:center;align-items:center}
+.big-letter{font-size:68px;font-weight:800;color:#ffb3d6;animation:glowLetter 2s infinite;font-style:italic}
+.caption{padding:12px 5px;color:#f3d8e5;font-size:12.5px;line-height:1.5;font-style:italic;min-height:95px}
+.caption span{color:#ff91c5;font-size:16px;display:block;margin-bottom:6px;font-weight:600}
+.next{display:inline-block;margin-top:30px;padding:10px 30px;border:1px solid #ff5c9a;border-radius:25px;background:rgba(255,92,154,0.1);color:#ffc2d9;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="sky"></div><div class="moon"></div>
+<div class="page">
+<div class="top">✦ FOR MY FAVORITE PERSON ✦</div>
+<h1>Why You Are Special</h1>
+<div class="memories">
+<div class="memory-card"><div class="letter-box"><div class="big-letter">S</div></div><div class="caption"><span>♡ Sincere</span>I always respect your sincerity and your kind heart.</div></div>
+<div class="memory-card"><div class="letter-box"><div class="big-letter">A</div></div><div class="caption"><span>♡ Admirable</span>Your thoughts, your hard work and your nature is always admirable.</div></div>
+<div class="memory-card"><div class="letter-box"><div class="big-letter">M</div></div><div class="caption"><span>♡ Mature</span>I love the way you understand and handle every situation so calmly.</div></div>
+<div class="memory-card"><div class="letter-box"><div class="big-letter">I</div></div><div class="caption"><span>♡ Inspiring</span>Your dedication and positive nature always inspires me.</div></div>
+<div class="memory-card"><div class="letter-box"><div class="big-letter">R</div></div><div class="caption"><span>♡ Respectful</span>Your respectful nature makes you even more special to me. ❤️</div></div>
+</div>
+<a href="gallery.html" class="next">Continue →</a>
+</div>
+<script>
+for(let i=0;i<800;i++){let s=document.createElement('div');s.className='star';s.style.top=Math.random()*100+'%';s.style.left=Math.random()*100+'%';s.style.width=(Math.random()*2.5+0.5)+'px';s.style.height=s.style.width;s.style.animation=`twinkle ${2+Math.random()*3}s infinite`;s.style.animationDelay=Math.random()*3+'s';document.body.appendChild(s);}
+for(let i=0;i<50;i++){let h=document.createElement('div');h.className='p-heart';h.innerHTML=Math.random()>0.5?'♡':'♥';h.style.color=Math.random()>0.5?'transparent':'#ff5e9a';if(h.style.color=='transparent')h.style.webkitTextStroke='1.2px #ff7fb0';h.style.top=Math.random()*92+4+'%';h.style.left=Math.random()*96+2+'%';h.style.fontSize=(Math.random()*10+10)+'px';h.style.animation=`floatLive ${3+Math.random()*3}s infinite`;h.style.animationDelay=Math.random()*5+'s';document.body.appendChild(h);}
+</script>
+</body>
+</html>
