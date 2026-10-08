@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head><title>Three Types Of Love ❤️</title><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%}
+body{min-height:100vh;overflow-x:hidden;background:#160b2b;font-family:Georgia, serif;color:white}
+.sky{position:fixed;inset:0;z-index:-3;background:radial-gradient(ellipse at 50% 20%, #2e1a4d 0%, #1a102e 50%, #110725 100%);}
+.star{position:fixed;background:white;border-radius:50%;}
+.p-heart{position:fixed;text-shadow:0 0 12px #ff3d9a;pointer-events:none;z-index:1}
+@keyframes twinkle{0%,100%{opacity:0.2} 50%{opacity:1}}
+@keyframes floatLive{0%{transform:translateY(0)} 50%{transform:translateY(-15px)} 100%{transform:translateY(0)}}
+.moon{position:fixed;top:55px;right:35px;width:95px;height:95px;background:radial-gradient(circle at 40% 40%, #ffffea 0%, #fff9d6 60%, #fff2b8 100%);border-radius:50%;box-shadow:0 0 12px rgba(255,255,220,0.8),0 0 25px rgba(255,249,200,0.6),0 0 50px rgba(214,190,255,0.5),0 0 80px rgba(180,140,255,0.3);z-index:2}
+.page{position:relative;z-index:10;min-height:100vh;padding:50px 20px;text-align:center;display:block;width:100%}
+.top{letter-spacing:4px;font-size:10px;opacity:0.7;color:#d8cbe8}
+h1{font-size:34px;font-style:italic;color:#ffd6ec;text-shadow:0 0 15px rgba(255,110,181,0.5);margin-top:12px}
+.gallery{width:100%;max-width:1100px;margin:30px auto;display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.memory-card{width:300px;padding:14px;border:1px solid rgba(255,100,180,.45);border-radius:18px;background:rgba(55,15,65,.32);backdrop-filter:blur(3px);transition:0.3s}
+.memory-card:hover{transform:translateY(-8px);box-shadow:0 0 25px rgba(255,92,154,0.5)}
+.photo-box{width:100%;height:120px;border-radius:12px;background:rgba(255,100,180,0.08);border:1px dashed #ff7fb0;display:flex;justify-content:center;align-items:center;flex-direction:column;color:#ffb3d6}
+.big-word{font-size:32px;font-weight:800;color:#ffb3d6;letter-spacing:2px;font-style:italic}
+.caption{padding:14px 8px;color:#f3d8e5;font-size:13px;line-height:1.6;font-style:italic;min-height:130px;text-align:center}
+.caption b{color:#ff91c5;font-size:12px;letter-spacing:1px;display:block;margin-top:8px}
+.sher-box{max-width:900px;margin:25px auto 0;padding:16px 20px;border-radius:14px;background:rgba(255,92,154,0.1);border:1px solid rgba(255,100,180,0.3);color:#ffd6ec;font-style:italic;font-size:13.5px;line-height:1.7}
+.next{display:inline-block;margin-top:30px;padding:12px 34px;border:1px solid #ff5c9a;border-radius:25px;background:rgba(255,92,154,0.15);color:#ffc2d9;text-decoration:none;box-shadow:0 0 18px rgba(255,92,154,0.3);font-size:15px}
+</style>
+</head>
+<body>
+<div class="sky"></div><div class="moon"></div>
+<div class="page">
+<div class="top">✦ THREE TYPES OF LOVE ✦</div>
+<h1>Love Is Of Three Types</h1>
+<div class="gallery">
+<div class="memory-card"><div class="photo-box"><div class="big-word">NASEEB</div><div style="font-size:11px;letter-spacing:3px;margin-top:4px;opacity:0.7">FIRST</div></div><div class="caption">When you meet someone and they accept you the way you are,<b>That is called - NASEEB (Luck).</b></div></div>
+<div class="memory-card"><div class="photo-box"><div class="big-word">MUKADDAR</div><div style="font-size:11px;letter-spacing:3px;margin-top:4px;opacity:0.7">SECOND</div></div><div class="caption">When you wish for someone and that person becomes yours,<b>That is called - MUKADDAR (Destiny).</b></div></div>
+<div class="memory-card"><div class="photo-box"><div class="big-word">ISHQ</div><div style="font-size:11px;letter-spacing:3px;margin-top:4px;opacity:0.7">THIRD</div></div><div class="caption">When you love someone who never becomes yours in your whole life,<b>That is called - ISHQ (True Love).</b></div></div>
+</div>
+<div class="sher-box">
+As the saying goes -<br/>
+What you get for free is called <span style="color:#ff91c5">Luck</span>, what you get after praying for is called <span style="color:#ff91c5">Destiny</span>,<br/>
+But the one who never becomes yours yet stays alive in your heart, God is witness, that is called <span style="color:#ff91c5">True Love (Ishq)</span>. ❤️
+</div>
+<a href="letter.html" class="next">My Letter For You → 💌</a>
+</div>
+<script>
+for(let i=0;i<800;i++){let s=document.createElement('div');s.className='star';s.style.top=Math.random()*100+'%';s.style.left=Math.random()*100+'%';s.style.width=(Math.random()*2.5+0.5)+'px';s.style.height=s.style.width;s.style.animation=`twinkle ${2+Math.random()*3}s infinite`;s.style.animationDelay=Math.random()*3+'s';document.body.appendChild(s);}
+for(let i=0;i<50;i++){let h=document.createElement('div');h.className='p-heart';h.innerHTML=Math.random()>0.5?'♡':'♥';h.style.color=Math.random()>0.5?'transparent':'#ff5e9a';if(h.style.color=='transparent')h.style.webkitTextStroke='1.2px #ff7fb0';h.style.top=Math.random()*92+4+'%';h.style.left=Math.random()*96+2+'%';h.style.fontSize=(Math.random()*10+10)+'px';h.style.animation=`floatLive ${3+Math.random()*3}s infinite`;h.style.animationDelay=Math.random()*5+'s';document.body.appendChild(h);}
+</script>
+</body>
+</html>
