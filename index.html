@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>A Little Magic for You ✨</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%}
+body{min-height:100vh;overflow-x:hidden;background:#160b2b;font-family:Georgia, serif;color:white}
+.sky{position:fixed;inset:0;z-index:-3;background:radial-gradient(ellipse at 50% 20%, #2e1a4d 0%, #1a102e 50%, #110725 100%);}
+.star{position:fixed;background:white;border-radius:50%;pointer-events:none}
+.p-heart{position:fixed;text-shadow:0 0 12px #ff3d9a;pointer-events:none;z-index:1}
+@keyframes twinkle{0%,100%{opacity:0.2} 50%{opacity:1}}
+@keyframes floatLive{0%{transform:translateY(0)} 50%{transform:translateY(-15px)} 100%{transform:translateY(0)}}
+@keyframes beat{0%,100%{transform:scale(1)} 50%{transform:scale(1.15)}}
+.moon{position:fixed;top:35px;right:35px;width:95px;height:95px;background:radial-gradient(circle at 40% 40%, #ffffea 0%, #fff9d6 60%, #fff2b8 100%);border-radius:50%;box-shadow:0 0 12px rgba(255,255,220,0.8),0 0 25px rgba(255,249,200,0.6),0 0 50px rgba(214,190,255,0.5);z-index:2;}
+.page{position:relative;z-index:10;min-height:100vh;width:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:30px 20px}
+.top{letter-spacing:4px;font-size:10px;opacity:0.7;margin-bottom:28px;text-transform:uppercase;color:#d8cbe8}
+.big-heart{font-size:36px;color:#ff5ea8;text-shadow:0 0 15px #ff3d9a, 0 0 30px #ff3d9a;margin-bottom:22px;animation:beat 1.3s infinite}
+.happy{font-size:54px;font-weight:400;font-style:italic;color:#ffd6ec;text-shadow:0 0 15px rgba(255,110,181,0.5);line-height:1.15}
+.desc{font-size:14px;color:#d9cce8;font-style:italic;margin-top:18px;opacity:0.85}
+.enter{display:inline-block;margin-top:28px;padding:10px 30px;border:1px solid #ff5c9a;border-radius:25px;background:rgba(255,92,154,0.1);color:#ffc2d9;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="sky"></div><div class="moon"></div>
+<div class="page">
+  <div class="top">A LITTLE SURPRISE, JUST FOR YOU</div>
+  <div class="big-heart">♥</div>
+  <h1 class="happy">Tonight Holds A Little Magic...</h1>
+  <div class="desc">Some beautiful moments are worth waiting for.</div>
+  <a href="ourstory.html" class="enter">Step Inside →</a>
+</div>
+<script>
+for(let i=0;i<800;i++){let s=document.createElement('div');s.className='star';s.style.top=Math.random()*100+'%';s.style.left=Math.random()*100+'%';s.style.width=(Math.random()*2.5+0.5)+'px';s.style.height=s.style.width;s.style.animation=`twinkle ${2+Math.random()*3}s infinite`;s.style.animationDelay=Math.random()*3+'s';document.body.appendChild(s);}
+for(let i=0;i<50;i++){let h=document.createElement('div');h.className='p-heart';h.innerHTML=Math.random()>0.5?'♡':'♥';h.style.color=Math.random()>0.5?'transparent':'#ff5e9a';if(h.style.color=='transparent')h.style.webkitTextStroke='1.2px #ff7fb0';h.style.top=Math.random()*92+4+'%';h.style.left=Math.random()*96+2+'%';h.style.fontSize=(Math.random()*10+10)+'px';h.style.animation=`floatLive ${3+Math.random()*3}s infinite`;h.style.animationDelay=Math.random()*5+'s';document.body.appendChild(h);}
+</script>
+</body>
+</html>
