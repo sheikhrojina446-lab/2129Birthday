@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head><title>A Letter From My Heart 💗</title><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%}
+body{min-height:100vh;overflow-x:hidden;background:#160b2b;font-family:Georgia, serif;color:white}
+.sky{position:fixed;inset:0;z-index:-3;background:radial-gradient(ellipse at 50% 20%, #2e1a4d 0%, #1a102e 50%, #110725 100%);}
+.star{position:fixed;background:white;border-radius:50%;z-index:-1;pointer-events:none}
+.p-heart{position:fixed;z-index:1;text-shadow:0 0 12px #ff3d9a;pointer-events:none}
+@keyframes twinkle{0%,100%{opacity:0.2} 50%{opacity:1}}
+@keyframes floatLive{0%{transform:translateY(0)} 50%{transform:translateY(-15px)} 100%{transform:translateY(0)}}
+@keyframes slideUp{0%{transform:translateY(80px);opacity:0} 100%{transform:translateY(0);opacity:1}}
+.moon{position:fixed;top:35px;right:35px;width:95px;height:95px;background:radial-gradient(circle at 40% 40%, #ffffea 0%, #fff9d6 60%, #fff2b8 100%);border-radius:50%;box-shadow:0 0 12px rgba(255,255,220,0.8),0 0 25px rgba(255,249,200,0.6),0 0 50px rgba(214,190,255,0.5);z-index:2}
+.page{position:relative;z-index:10;min-height:100vh;padding:50px 20px 80px 20px;text-align:center;display:block;width:100%}
+.heading h1{color:#f3cfe0;font-size:34px;font-style:italic;text-shadow:0 0 10px rgba(255,100,180,.6);animation:slideUp 1s ease-out forwards}
+.heading-line{width:90px;height:1px;margin:20px auto;background:#e98ab7;box-shadow:0 0 8px #e98ab7}
+.letter-box{width:900px;max-width:95%;margin:35px auto 0;padding:45px 55px;background:linear-gradient(145deg, rgba(61,20,76,.82), rgba(28,8,42,.9));border:1px solid rgba(234,126,183,.38);border-radius:24px;box-shadow:0 0 30px rgba(211,80,160,.14);animation:slideUp 1s ease-out 0.3s both}
+.dear{text-align:center;color:#eeb2cf;font-size:25px;font-style:italic;margin-bottom:30px}
+.letter-text{color:#ead8e2;font-size:16px;line-height:1.9;text-align:center}
+.letter-text p{margin-bottom:28px}
+.ending{color:#e9a4c4;font-size:18px;font-style:italic;margin-top:35px}
+.final-line{color:#f0d7e3;font-style:italic;margin-top:25px}
+</style>
+</head>
+<body>
+<div class="sky"></div><div class="moon"></div>
+<div class="page">
+<div class="heading"><h1>A Letter From My Heart</h1><div class="heading-line"></div></div>
+<div class="letter-box">
+<div class="dear">Dear Samir 💗</div>
+<div class="letter-text">
+<p>Aaj ka din aapke liye bohat special hai.. or mere liye aap Aaj ka din mere liye sirf ek birthday nahi, balki us din ki khushi hai jab is duniya ko tum jaise khubsurat dil wala insaan mila tha. Shayad me kabhi lafzon me nahi bata paungi ki tum meri zindagi me kitni ahmiyat rakhte ho. Tum woh ho jo meri har dua me ho, meri har muskurahat ki wajah ho aur mere dil ke sabse kareeb ho. 💗</p>
+<p>Jab tum meri zindagi me aaye, tab maine samjha ki sachcha pyaar kya hota hai. Tumne mujhe sirf pyaar nahi diya, balki sukoon, respect aur woh ehsaas diya ki koi mujhe poori duniya se zyada samajhta hai. Tumhare saath bitaya hua har pal meri zindagi ka sabse khoobsurat hissa hai. Or ye main kabhi Nahi bhulungi. 💗</p>
+<p>Me chahti h ki tumhari zindagi me kabhi koi gham na aaye, tumhara chehra hamesha isi tarah muskurata rahe aur tumhari aankhon me hamesha khushiyon ki chamak bani rahe. Jo bhi sapne tum dekhte ho, Allah unhe haqeeqat bana de. Jo bhi manzil tum chaho, woh tumhe mile. Aur jo bhi khushi tum deserve karte ho, woh tumhare kadmon mein ho. 💗</p>
+<p>Tum mere liye sirf ek insaan nahi ho. Tum meri aadat ho, meri dua ho, meri duniya ho. Agar mujhe zindagi dobara jeene ka mauka mile, to main har baar tumhe hi chunungi. Kyunki tumhare jaisa koi nahi hai aur na hi kabhi ho sakta hai. 💗</p>
+<p>Aaj tumhare Birthday par main sirf itna kehna chahti hu ki chahe kitna bhi waqt guzar jaye, meri mohabbat tumhare liye kabhi kam nahi hogi. Har din ke saath yeh aur gehri, aur khubsurat hoti jayegi. 💗</p>
+<p>Me hamesha tumhare saath rehna chahti hu, tumhari har khushi ka hissa banna chahti hu aur tumhare har sapne ko poora hote dekhna chahti hu. 💗</p>
+<p class="ending">Happy Birthday Pagal 💗</p>
+<p class="final-line">"Meri har dua mein tum ho, meri har khushi me tum ho, aur meri zindagi ki sabse khubsurat kahani bhi tum hi ho. Aaj ke din bas itna yaad rakhna, tum bahut special ho... mere liye sabse zyada. Sabse khaas, Or mujhe kuch nahi chahiye jindegi bhar baas Tumhara Sath chaiye" 💗</p>
+</div>
+</div>
+</div>
+<script>
+for(let i=0;i<700;i++){let s=document.createElement('div');s.className='star';s.style.top=Math.random()*100+'%';s.style.left=Math.random()*100+'%';s.style.width=(Math.random()*2.2+0.5)+'px';s.style.height=s.style.width;s.style.animation=`twinkle ${2+Math.random()*3}s infinite`;s.style.animationDelay=Math.random()*4+'s';document.body.appendChild(s);}
+for(let i=0;i<45;i++){let h=document.createElement('div');h.className='p-heart';h.innerHTML=Math.random()>0.5?'♡':'♥';h.style.color=Math.random()>0.5?'transparent':'#ff5e9a';if(h.style.color=='transparent')h.style.webkitTextStroke='1.2px #ff7fb0';h.style.top=Math.random()*92+4+'%';h.style.left=Math.random()*96+2+'%';h.style.fontSize=(Math.random()*10+10)+'px';h.style.animation=`floatLive ${3+Math.random()*3}s infinite`;h.style.animationDelay=Math.random()*5+'s';document.body.appendChild(h);}
+</script>
+</body>
+</html>
